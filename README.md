@@ -43,3 +43,10 @@ MzansiBuilds aims to:
 | Frontend           | React + Tailwind CSS | Component-based, easy styling |
 | Version Control    | Git + GitHub         | Required for collaboration |
 | Testing (TDD)      | Jest + Supertest     | Ensures backend reliability |
+
+---
+
+##  Architecture Diagram
+
+<img width="599" height="622" alt="image" src="https://github.com/user-attachments/assets/2882eab7-e7ed-47ff-bc19-05b9bbfd901c" />
+
