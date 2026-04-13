@@ -2,6 +2,7 @@ const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
+const authRoutes = require('./routes/authRoutes');
 
 const app = express();
 
@@ -28,8 +29,13 @@ app.get('/health', (req, res) => {
   });
 });
 
-// Routes will be added here
-// app.use('/api/auth', authRoutes);
+
+app.use('/api/auth', authRoutes);
+
+
+app.use((req, res) => {
+  res.status(404).json({ error: 'Route not found' });
+});
 // app.use('/api/projects', projectRoutes);
 
 module.exports = app;
